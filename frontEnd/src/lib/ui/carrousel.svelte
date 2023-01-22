@@ -1,12 +1,9 @@
-<script>
+<!-- <script>
 	export let data;
 	console.log('segue', data);
-	import Carrousel from '$lib/ui/carrousel.svelte';
-</script>
+</script> -->
 
-<Carrousel />
-
-<!-- {#if Array.isArray(data.posts)}
+{#if Array.isArray(data.posts)}
 	<div class="carousel w-full">
 		{#each data.posts as post, i}
 			<div id="slide{i}" class="carousel-item relative w-full">
@@ -20,4 +17,4 @@
 			</div>
 		{/each}
 	</div>
-{/if} -->
+{/if}

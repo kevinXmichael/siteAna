@@ -1,5 +1,9 @@
 <script>
-  import "../app.css";
+	import '../app.css';
+	export let data;
+	console.log(data);
 </script>
 
-<slot />
+<main>
+	<slot />
+</main>
