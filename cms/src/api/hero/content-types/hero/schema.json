@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "heroes",
+  "info": {
+    "singularName": "hero",
+    "pluralName": "heroes",
+    "displayName": "Hero"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "link_video": {
+      "type": "string",
+      "required": true
+    },
+    "Titulo": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "Descricao": {
+      "type": "richtext"
+    },
+    "botao": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.botao"
+    }
+  }
+}

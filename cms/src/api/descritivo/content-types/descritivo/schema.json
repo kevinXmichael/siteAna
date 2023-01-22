@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "descritivos",
+  "info": {
+    "singularName": "descritivo",
+    "pluralName": "descritivos",
+    "displayName": "Metodologia",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "Descricao": {
+      "type": "richtext"
+    },
+    "Imagem": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
