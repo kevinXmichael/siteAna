@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_layout_botaos",
+  "info": {
+    "displayName": "botao"
+  },
+  "options": {},
+  "attributes": {
+    "titulo_botao": {
+      "type": "string",
+      "maxLength": 30
+    },
+    "url": {
+      "type": "string",
+      "maxLength": 300
+    }
+  }
+}

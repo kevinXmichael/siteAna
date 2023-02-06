@@ -1,38 +1,19 @@
-# create-svelte
+// client colors //
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+mediumGray #FFFFFF
+lightGrey #E1E3E5
+darkGrey #3A3A3A
+lightYellow #F3E9BD
+black #000000
+fullYellow #F6CD4C
 
-## Creating a project
+// kev //
 
-If you're seeing this, you've probably already done this step. Congrats!
+Kev. Whaddaup? Hope you´re fine.
+This is the issue:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+1. Data is being loaded from +layout.ts and loaded inside +layout.svelte. Therefore, all children pages inherit this data.
+2. +page.svelte has a carroussel code, that works when coded inside it.
+3. Whenever I build a component out of it, and import indo +page.svelte, it crashes the app.
+4. That said: what is the correct way to load data previously fetched inside a component? Tried export let data, no sucess.
+   :)
