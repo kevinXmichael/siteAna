@@ -1,23 +1,42 @@
 <script>
+	/**
+	 * @type {{ posts: any; }}
+	 */
 	export let data;
-	console.log('segue', data);
-	import Carrousel from '$lib/ui/carrousel.svelte';
+	console.log(data);
+
+	import Hero from '$lib/ui/hero.svelte';
+	import Button from '$lib/ui/button.svelte';
+	import PicText from '$lib/ui/picText.svelte';
+	import TextPic from '$lib/ui/textPic.svelte';
+	import Services from '$lib/ui/services.svelte';
+	import Contact from '$lib/ui/contact.svelte';
+	import Header from '$lib/ui/header.svelte';
+	import Footer from '$lib/ui/footer.svelte';
+	import Clients from '$lib/ui/clients.svelte';
 </script>
 
-<Carrousel />
-
-<!-- {#if Array.isArray(data.posts)}
-	<div class="carousel w-full">
-		{#each data.posts as post, i}
-			<div id="slide{i}" class="carousel-item relative w-full">
-				<h2 class="mt-8">{post.attributes.nome_cargo}, {i}</h2>
-				<div
-					class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-				>
-					<a href="#slide{i - 1}" class="btn btn-circle">❮</a>
-					<a href="#slide{i + 1}" class="btn btn-circle">❯</a>
-				</div>
-			</div>
-		{/each}
-	</div>
-{/if} -->
+<Header />
+<wrapper id="hero" class="md:flex sd:flex-col sd:justify-center sd:items-center text-center ">
+	<Hero />
+</wrapper>
+<Clients />
+<wrapper
+	id="metodology1"
+	class="md:flex sd:flex-col sd:justify-center sd:items-center text-center "
+>
+	<PicText />
+</wrapper>
+<wrapper
+	id="metodology2"
+	class="md:flex sd:flex-col sd:justify-center sd:items-center text-center "
+>
+	<TextPic />
+</wrapper>
+<wrapper id="prices" class="md:flex sd:flex-col sd:justify-center sd:items-center text-center ">
+	<Services />
+</wrapper>
+<wrapper id="contact" class="md:flex sd:flex-col sd:justify-center sd:items-center text-center ">
+	<Contact />
+</wrapper>
+<Footer />

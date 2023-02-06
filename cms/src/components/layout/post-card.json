@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_layout_post_cards",
+  "info": {
+    "displayName": "postCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "short_title": {
+      "type": "string"
+    },
+    "short_description": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

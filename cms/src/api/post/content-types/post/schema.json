@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "fulltext": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "CoverPicture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "galery": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.galery"
+    },
+    "postCard": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.post-card"
+    }
+  }
+}
