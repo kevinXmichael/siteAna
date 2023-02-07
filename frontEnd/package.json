@@ -33,6 +33,7 @@
 	"type": "module",
 	"dependencies": {
 		"daisyui": "^2.47.0",
-		"gsap": "^3.11.4"
+		"gsap": "^3.11.4",
+		"nodemailer": "^6.9.1"
 	}
 }
